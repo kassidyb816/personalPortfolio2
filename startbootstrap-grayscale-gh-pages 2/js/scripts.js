@@ -13,7 +13,7 @@
                 this.pathname.replace(/^\//, "") &&
             location.hostname == this.hostname
         ) {
-            var target = $(this.hash);
+            let target = $(this.hash);
             target = target.length
                 ? target
                 : $("[name=" + this.hash.slice(1) + "]");
@@ -29,6 +29,13 @@
             }
         }
     });
+
+    <nav class="main-nav">
+  <a href="#top">Top</a>
+  <a href="#section-1">Section 1</a>
+  <a href="#section-2">Section 2</a>
+  <a href="#section-3">Section 3</a>
+  </nav>
 
     // Closes responsive menu when a scroll trigger link is clicked
     $(".js-scroll-trigger").click(function () {
